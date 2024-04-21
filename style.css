@@ -3,7 +3,12 @@ body {
     font-family: sans-serif;
     background-color: #0f1f2e; /* Light gray background */
   }
-  
+    body h1 {
+    font-size: 8px;
+    margin-top: 150px;
+    margin-left: 120px;
+    color: #515050;
+}
   .hero {
     display: flex;
     flex-direction: column;
