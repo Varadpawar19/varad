@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #0f1f2e; /* Light gray background */
+  }
+  
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 110px 550px;
+  }
+  
+  .profile-picture {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%; /* Circular frame */
+  }
+  
+  nav {
+    margin-top: -85px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around; /* Adjust if needed */
+    width: 50%;
+  }
+  
+  nav a:first-child { /* Apply to "Skills" */
+    margin-right: -20px; /* Adjust margin value as needed */
+  }
+  
+
+  .name {
+    text-align: center;
+    color: #FFF;
+    margin-top: 15px;
+    font-family: Almarai;
+    font-size: 72px;
+    line-height: 1.5; /* Adjust line spacing for better readability */
+  }
+  
+  nav a {
+    text-decoration: none;
+    text-align: center;
+    color: #DDB116; /* Adjust text color to your preference */
+    padding: 10px 5px;
+    font-weight: bold;
+    position: relative; /* Needed for pseudo-element positioning */
+  }
+  
+  nav a:after {
+    content: "";
+    display: block;
+    width: 100%; 
+    height: 1px; 
+    background-color: #DDB116; 
+    position: absolute;
+    bottom: -1; 
+    left: 0; 
+  }
+   
+  .bio {
+    /* font-family: Almarai; */
+    text-align: center;
+    color: #d1d0d0;
+    margin-top: 30px;
+    font-size: 21px;
+    line-height: 1.5; /* Adjust line spacing for better readability */
+  }
+
+  .para{
+    height: 180px;
+    width: 850px;
+  }
+
+  .media a i {
+    margin: 0 10px; /* Adjust as needed */
+    font-size: 25px; /* Adjust as needed */
+    margin-top: -50px;
+  }
+
+  .project {
+    margin-top: 20px; /* Adjust spacing as needed */
+    color: #d1d0d0;
+    height: 220px;
+    width: 540px;
+    font-size: 1.11rem;
+  }
+  .project h2 {
+    color: #e7e6e6;
+    font-size: 1.2rem; /* Adjust font size for titles */
+    margin-bottom: 2px; /* Spacing between title and description */
+    text-align: center;
+
+  }
+  .project ul li p {
+    margin-left: 50px; /* Indent descriptions for alignment */
+    line-height: 0px; /* Adjust line spacing for readability */
+  }
+  .project-container {
+    display: flex; /* Activate Flexbox */
+  }
+  
+  .project p {
+    line-height: 1.1; /* Reduce line spacing for descriptions */
+    margin-bottom: 5px; /* Adjust spacing between paragraphs */
+  }
+
+.skil{
+  text-align: center;
+  color: #d1d0d0;
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 1.33;
+  height: 150px;
+  width: 960px;
+}
+/* Styles for mobile screens (example) */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack links vertically on mobile */
+    justify-content: center; /* Center links vertically */
+    width: 100%; /* Make navigation full width */
+    margin-top: 0; /* Remove top margin on mobile */
+  }
+  nav a {
+    margin-right: 0; /* Remove horizontal margin */
+    padding: 10px; /* Adjust padding if needed */
+  }
+}
+
+/* Project styles for mobile screens (example) */
+@media (max-width: 768px) {
+  .project {
+    width: 100%; /* Make projects full width on mobile */
+    margin: 15px 0; /* Adjust margin for spacing */
+    height: auto; /* Remove fixed height for content flexibility */
+  }
+}
+
+/* Media query for mobile screens (example) */
+@media (max-width: 768px) {
+  .media {
+    display: flex; /* Activate Flexbox */
+    justify-content: space-around; /* Distribute icons evenly */
+    margin-top: 20px; /* Optional spacing adjustment for mobile */
+  }
+  .media a i {
+    margin: 0 5px; /* Adjust spacing between icons on mobile */
+  }
+}
+.project-container {
+  display: flex; /* Activate Flexbox (existing style) */
+  /* Other styles for project container... */
+}
+
+/* Media query for mobile screens (example) */
+@media (max-width: 768px) {
+  .project-container {
+    flex-wrap: wrap; /* Allow projects to wrap to multiple lines if needed */
+  }
+  .project {
+    width: 100%; /* Make projects full width on mobile */
+    margin: 15px 0; /* Adjust margin for spacing */
+  }
+}
